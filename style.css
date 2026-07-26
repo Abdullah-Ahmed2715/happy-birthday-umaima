@@ -1,0 +1,796 @@
+/* ===================================
+   GOOGLE FONT DEFAULTS
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#d8c8ff,#e8ddff,#f5efff);
+
+    color:#000;
+
+    height:100vh;
+
+}
+
+/* ===================================
+   BACKGROUND
+=================================== */
+
+#background{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    left:0;
+
+    top:0;
+
+    overflow:hidden;
+
+    z-index:-10;
+
+    background:
+    radial-gradient(circle at top,#ffffff40,transparent 50%),
+    linear-gradient(135deg,#c7b4ff,#e8ddff,#f7f3ff);
+
+}
+
+/* ===================================
+   SCREEN
+=================================== */
+
+.screen{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:1s;
+
+}
+
+.hidden{
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:scale(.95);
+
+}
+
+.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/* ===================================
+   GLASS CARD
+=================================== */
+
+.glass{
+
+    width:85%;
+
+    max-width:760px;
+
+    padding:55px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(25px);
+
+    background:rgba(255,255,255,.18);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+
+    0 10px 50px rgba(0,0,0,.15),
+
+    inset 0 0 20px rgba(255,255,255,.15);
+
+    text-align:center;
+
+}
+
+.card{
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* ===================================
+   HEADINGS
+=================================== */
+
+.title{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:72px;
+
+    color: #000;
+
+    margin-bottom:25px;
+
+}
+
+h1{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    margin-top:20px;
+
+    font-weight:500;
+
+}
+
+p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#000;
+
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.mainBtn{
+
+    margin-top:40px;
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:60px;
+
+    background:white;
+
+    color:#8d62ff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.mainBtn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.25);
+
+}
+
+.mainBtn:active{
+
+    transform:scale(.95);
+
+}
+
+/* ===================================
+   MUSIC BUTTON
+=================================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    top:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#8d62ff;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    transition:.4s;
+
+}
+
+#musicBtn:hover{
+
+    transform:rotate(20deg) scale(1.1);
+
+}
+
+/* ===================================
+   LOADING
+=================================== */
+
+.loader{
+
+    width:100%;
+
+    height:12px;
+
+    margin:35px auto;
+
+    background:#ffffff40;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress{
+
+    width:0;
+
+    height:100%;
+
+    background:white;
+
+    animation:loading 3s forwards;
+
+}
+
+/* ===================================
+   LETTER CARD
+=================================== */
+
+.letterCard{
+
+    max-width:850px;
+
+}
+
+#letter{
+
+    margin-top:30px;
+
+    text-align:left;
+
+}
+
+#letter p{
+
+    margin-bottom:22px;
+
+}
+
+#letter h2{
+
+    text-align:right;
+
+    margin-top:40px;
+
+}
+
+/* ===================================
+   FINAL CARD
+=================================== */
+
+.finalCard h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:70px;
+
+}
+
+.finalMessage{
+
+    margin-top:25px;
+
+}
+/* ===================================
+   FLOATING HEART
+=================================== */
+
+#heart{
+
+    width:90px;
+
+    height:90px;
+
+    margin:50px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:65px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    user-select:none;
+
+    animation:floatHeart 2s ease-in-out infinite;
+
+}
+
+#heart:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* ===================================
+   GIFT
+=================================== */
+
+#giftBox{
+
+    font-size:110px;
+
+    margin-top:45px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    user-select:none;
+
+}
+
+#giftBox:hover{
+
+    transform:scale(1.15) rotate(-8deg);
+
+}
+
+/* ===================================
+   CAKE
+=================================== */
+
+#cake{
+
+    position:relative;
+
+    font-size:130px;
+
+    margin-top:30px;
+
+    user-select:none;
+
+}
+
+#flame{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    animation:flicker .25s infinite alternate;
+
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+
+    position:fixed;
+
+    bottom:15px;
+
+    width:100%;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:14px;
+
+    opacity:.8;
+
+}
+
+/* ===================================
+   CURSOR GLOW
+=================================== */
+
+#cursorGlow{
+
+    position:fixed;
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:#ffffff80;
+
+    pointer-events:none;
+
+    filter:blur(10px);
+
+    z-index:9999;
+
+    transition:.08s;
+
+}
+
+/* ===================================
+   BALLOONS
+=================================== */
+
+.balloon{
+
+    position:fixed;
+
+    bottom:-150px;
+
+    width:80px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    opacity:.55;
+
+}
+
+.balloonLeft{
+
+    left:40px;
+
+    background:#d7b5ff;
+
+    animation:balloonFloat 11s infinite;
+
+}
+
+.balloonRight{
+
+    right:40px;
+
+    background:#b58cff;
+
+    animation:balloonFloat 13s infinite;
+
+}
+
+/* ===================================
+   SPARKLES
+=================================== */
+
+.sparkles::before,
+.sparkles::after{
+
+    content:"✨";
+
+    position:absolute;
+
+    font-size:22px;
+
+    animation:sparkle 5s linear infinite;
+
+}
+
+.sparkles::before{
+
+    left:15%;
+
+    top:15%;
+
+}
+
+.sparkles::after{
+
+    right:18%;
+
+    bottom:18%;
+
+}
+
+/* ===================================
+   STARS
+=================================== */
+
+.stars::before,
+.stars::after{
+
+    content:"•";
+
+    position:absolute;
+
+    color:white;
+
+    opacity:.6;
+
+    animation:twinkle 2s infinite;
+
+}
+
+.stars::before{
+
+    top:20%;
+
+    left:10%;
+
+    font-size:14px;
+
+}
+
+.stars::after{
+
+    top:65%;
+
+    right:12%;
+
+    font-size:18px;
+
+}
+
+/* ===================================
+   ANIMATIONS
+=================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes loading{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes floatHeart{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes flicker{
+
+    from{
+
+        transform:translateX(-50%) scale(1);
+
+    }
+
+    to{
+
+        transform:translateX(-50%) scale(1.15);
+
+    }
+
+}
+
+@keyframes balloonFloat{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-120vh);
+
+    }
+
+}
+
+@keyframes sparkle{
+
+    0%{
+
+        transform:scale(.6);
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(.6);
+
+        opacity:.2;
+
+    }
+
+}
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:768px){
+
+.glass{
+
+    width:92%;
+
+    padding:35px 25px;
+
+}
+
+.title{
+
+    font-size:50px;
+
+}
+
+h1{
+
+    font-size:34px;
+
+}
+
+p{
+
+    font-size:17px;
+
+}
+
+.mainBtn{
+
+    padding:15px 28px;
+
+    font-size:16px;
+
+}
+
+#giftBox{
+
+    font-size:90px;
+
+}
+
+#cake{
+
+    font-size:100px;
+
+}
+
+.finalCard h1{
+
+    font-size:48px;
+
+}
+
+}

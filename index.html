@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎂 Happy Birthday, Umaima 💜</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================================= -->
+<!-- Background Music -->
+<!-- ================================= -->
+
+<audio id="bgMusic" loop>
+    <source src="music/jhol.mp3" type="audio/mp3">
+</audio>
+
+<button id="musicBtn">
+    🎵
+</button>
+
+<!-- ================================= -->
+<!-- Floating Background -->
+<!-- ================================= -->
+
+<div id="background">
+
+<div class="stars"></div>
+
+<div class="hearts"></div>
+
+<div class="sparkles"></div>
+
+</div>
+
+<!-- ================================= -->
+<!-- Loading Screen -->
+<!-- ================================= -->
+
+<section id="loading" class="screen active">
+
+<div class="glass">
+
+<h1>Preparing Something Special...</h1>
+
+<h2>For Umaima 💜</h2>
+
+<div class="loader">
+
+<div class="progress"></div>
+
+</div>
+
+<p>Please wait...</p>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Welcome Screen -->
+<!-- ================================= -->
+
+<section id="welcome" class="screen hidden">
+
+<div class="glass card">
+
+<h1 class="title">
+Hey Beautiful 💜
+</h1>
+
+<p class="subtitle">
+
+Today is not just another day.
+
+<br><br>
+
+It is the day my favourite person came into this world.
+
+</p>
+
+<button id="startBtn" class="mainBtn">
+
+Open Your Surprise ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Catch Heart -->
+<!-- ================================= -->
+
+<section id="heartGame" class="screen hidden">
+
+<div class="glass card">
+
+<h1>
+
+Catch My Heart ❤️
+
+</h1>
+
+<p>
+
+Catch my heart five times to unlock your birthday surprise.
+
+</p>
+
+<h2>
+
+Caught:
+<span id="score">0</span>/5
+
+</h2>
+
+<div id="heart">
+
+💖
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Gift -->
+<!-- ================================= -->
+
+<section id="giftSection" class="screen hidden">
+
+<div class="glass card">
+
+<h1>
+
+A Little Gift 🎁
+
+</h1>
+
+<p>
+
+Click the gift to open it.
+
+</p>
+
+<div id="giftBox">
+
+🎁
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Cake -->
+<!-- ================================= -->
+
+<section id="cakeSection" class="screen hidden">
+
+<div class="glass card">
+
+<h1>
+
+Make A Wish 🎂
+
+</h1>
+
+<p>
+
+Click the candle to blow it out.
+
+</p>
+
+<div id="cake">
+
+🎂
+
+<div id="flame">
+
+🔥
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Letter -->
+<!-- ================================= -->
+
+<section id="letterSection" class="screen hidden">
+
+<div class="glass letterCard">
+
+<h1>
+
+A Letter For You 💌
+
+</h1>
+
+<div id="letter">
+
+<p>
+
+On this special day of yours, I just want to say that you are the most beautiful blessing in my life.
+
+</p>
+
+<p>
+
+Your smile and presence makes my world softer and my heart calmer, and your love makes me feel special each and every day.
+
+</p>
+
+<p>
+
+May Allah bless you with endless happiness, health, success, love, and every dream your heart silently prays for.
+
+</p>
+
+<p>
+
+I am so lucky to have you.
+
+</p>
+
+<h2>
+
+— With all my love ❤️
+
+</h2>
+
+</div>
+
+<button id="finishBtn" class="mainBtn">
+
+Continue ✨
+
+</button>
+
+</div>
+
+</section>
+<!-- ================================= -->
+<!-- Final Screen -->
+<!-- ================================= -->
+
+<section id="finalSection" class="screen hidden">
+
+    <div class="glass card finalCard">
+
+        <h1 id="finalTitle">
+            🎉 Happy Birthday Umaima 💜
+        </h1>
+
+        <p class="finalMessage">
+
+            I hope today brings you as much happiness as you bring into my life.
+
+            <br><br>
+
+            Thank you for being the amazing person you are.
+
+            <br><br>
+
+            May Allah bless you with endless happiness,
+            success, health, love and beautiful memories.
+
+            <br><br>
+
+            I hope this little surprise made you smile. ❤️
+
+        </p>
+
+        <button id="replayBtn" class="mainBtn">
+
+            Replay The Magic ✨
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Decorations -->
+<!-- ================================= -->
+
+<div id="confetti"></div>
+
+<div class="balloon balloonLeft"></div>
+<div class="balloon balloonRight"></div>
+
+<div id="cursorGlow"></div>
+
+<!-- ================================= -->
+<!-- Footer -->
+<!-- ================================= -->
+
+<footer>
+
+Made with ❤️ for Umaima
+
+</footer>
+
+<!-- ================================= -->
+<!-- JavaScript -->
+<!-- ================================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
