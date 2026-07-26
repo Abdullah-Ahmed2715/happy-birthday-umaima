@@ -69,42 +69,41 @@ window.onload = ()=>{
 // Music
 // ================================
 
-musicBtn.addEventListener("click",()=>{
+musicBtn.addEventListener("click", () => {
 
-    if(music.paused){
+    if (music.paused) {
 
-        music.currentTime = 103;
+        music.load();
 
-        music.play();
+        music.addEventListener("loadedmetadata", function startMusic() {
 
-        musicBtn.innerHTML="⏸️";
+            music.currentTime = 103;
 
-    }
+            music.play();
 
-    else{
+            musicBtn.innerHTML = "⏸️";
+
+            music.removeEventListener("loadedmetadata", startMusic);
+
+        });
+
+    } else {
 
         music.pause();
 
-        musicBtn.innerHTML="🎵";
+        musicBtn.innerHTML = "🎵";
 
     }
 
 });
 
-// Loop from 1:43
+music.addEventListener("ended", () => {
 
-music.addEventListener("timeupdate",()=>{
+    music.currentTime = 103;
 
-    if(music.currentTime >= music.duration-0.5){
-
-        music.currentTime=103;
-
-        music.play();
-
-    }
+    music.play();
 
 });
-
 // ================================
 // Welcome
 // ================================
