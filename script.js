@@ -154,7 +154,7 @@ heart.onclick=()=>{
 
 gift.onclick=()=>{
 
-    gift.innerHTML="💖";
+    gift.innerHTML="🌹";
 
     gift.style.transform="scale(1.4)";
 
