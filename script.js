@@ -105,21 +105,50 @@ music.addEventListener("ended", () => {
 
 });
 // ================================
-// Welcome
+// Secret Code
 // ================================
 
-startBtn.onclick=()=>{
+const secretCode = document.getElementById("secretCode");
+const unlockBtn = document.getElementById("unlockBtn");
+const codeError = document.getElementById("codeError");
 
-    if(music.paused){
+unlockBtn.onclick = () => {
 
-        music.currentTime=103;
-        music.play();
+    if (secretCode.value === "27102011") {
+
+        codeError.style.display = "none";
+
+        if (music.paused) {
+
+            music.currentTime = 103;
+
+            music.play().catch(() => {});
+
+        }
+
+        show(heartGame);
+
+    } else {
+
+        codeError.style.display = "block";
+
+        secretCode.value = "";
+
+        secretCode.focus();
 
     }
 
-    show(heartGame);
-
 };
+
+secretCode.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+
+        unlockBtn.click();
+
+    }
+
+});
 
 // ================================
 // Heart Game

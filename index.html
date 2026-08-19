@@ -75,29 +75,38 @@
 
 <section id="welcome" class="screen hidden">
 
-<div class="glass card">
+    <div class="glass code-card">
 
-<h1 class="title">
-Hey Umaima 💜
-</h1>
+        <div class="lock-icon">
+            🔐
+        </div>
 
-<p class="subtitle">
+        <h1>
+            A Little Surprise Awaits ❤️
+        </h1>
 
-Today is not just another day.
+        <p>
+            Enter the 8-digit code to unlock your surprise.
+        </p>
 
-<br><br>
+        <input
+            type="text"
+            id="secretCode"
+            maxlength="8"
+            inputmode="numeric"
+            placeholder="Enter 8-digit code"
+            autocomplete="off"
+        >
 
-It is the day my favourite person came into this world.
+        <button id="unlockBtn">
+            Unlock My Surprise ✨
+        </button>
 
-</p>
+        <p id="codeError">
+            Incorrect code. Try again 💜
+        </p>
 
-<button id="startBtn" class="mainBtn">
-
-Open Your Surprise ❤️
-
-</button>
-
-</div>
+    </div>
 
 </section>
 
